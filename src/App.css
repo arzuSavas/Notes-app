@@ -1,0 +1,111 @@
+.App {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height:100%;
+  padding-top:100px;
+}
+body{
+  background-color: #F3F1F5;
+}
+.text-area{
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: 200px;
+  background-color:#F3F1F5;
+  border-radius:14px;
+  padding: 15px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+.text-area>textArea,
+.text-area>textArea:active{
+  border:none;
+  outline:none;
+  resize: none;
+  width: 98%;
+  height:80%;
+  background-color:transparent ;
+}
+.radio-group{
+  display:flex;
+}
+.notes{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-top:20px;
+  align-items: flex-start!important;
+}
+.note{
+  width: 300px;
+  height: 150px;
+  margin:15px;
+  border-radius:14px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  padding: 10px;
+}
+.search>input{
+  margin: 20px;
+  padding: 20px 30px;
+  border: none;
+  border-radius: 10px;
+  background-color: transparent;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+input{
+  outline: none;  
+}
+input[type=radio]{
+  outline: none; 
+  border: none;
+  width: 20px;
+}
+input[type=radio]::after{
+  content:'';
+  outline: none; 
+  width: 25px;
+  height: 25px;
+  border-radius:100%;
+  display: block;
+}
+input[type=radio]:checked::after{
+  content: '✔'!important;
+  display: block;
+  color:white;
+  box-sizing: border-box;
+  padding:4px 6px;
+}
+#color1::after{
+  background-color: #D75281;
+}
+#color2::after{
+  background-color: #646FD4;
+}
+#color3::after{
+  background-color: #FF4949;
+}
+button{
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  background-color:  #D75281;
+  border: none;
+  border-radius:20px;
+  padding:0px 20px;
+  line-height: 30px;
+}
+@media screen and (max-width:532px) {
+  .text-area{
+    width: 400px;
+    height: 200px;
+  }
+}
+@media screen and (max-width:448px) {
+  .text-area{
+    width: 300px;
+    height: 150px;
+  }
+}
